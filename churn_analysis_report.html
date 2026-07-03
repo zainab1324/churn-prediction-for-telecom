@@ -22,283 +22,60 @@
     --red: #b5433a;
   }
 
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.6;
-    padding: 0 0 100px;
-  }
-
+  body { background: var(--bg); color: var(--ink); font-family: 'Work Sans', sans-serif; line-height: 1.6; padding: 0 0 100px; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 32px; }
 
-  /* MASTHEAD */
-  .masthead {
-    padding: 64px 0 36px;
-    border-bottom: 2px solid var(--ink);
-    margin-bottom: 52px;
-  }
-
-  .kicker {
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--blue-deep);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
+  .masthead { padding: 64px 0 36px; border-bottom: 2px solid var(--ink); margin-bottom: 52px; }
+  .kicker { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue-deep); display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
   .kicker::before { content: ""; width: 22px; height: 1px; background: var(--blue-deep); }
-
-  h1.title {
-    font-family: 'Newsreader', serif;
-    font-weight: 500;
-    font-size: 58px;
-    line-height: 1.04;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    max-width: 780px;
-  }
-
-  h1.title em {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--blue);
-  }
-
-  .dek {
-    margin-top: 16px;
-    font-size: 16px;
-    color: var(--ink-dim);
-    max-width: 620px;
-  }
-
-  .meta-row {
-    margin-top: 28px;
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    font-family: 'Space Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-faint);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
+  h1.title { font-family: 'Newsreader', serif; font-weight: 500; font-size: 58px; line-height: 1.04; letter-spacing: -0.01em; color: var(--ink); max-width: 780px; }
+  h1.title em { font-style: italic; font-weight: 400; color: var(--blue); }
+  .dek { margin-top: 16px; font-size: 16px; color: var(--ink-dim); max-width: 620px; }
+  .meta-row { margin-top: 28px; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'Space Mono', monospace; font-size: 11.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; }
   .meta-row b { color: var(--ink-dim); font-weight: 700; }
 
-  /* SECTION LABELS */
-  .section-head {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 24px;
-  }
-
-  .section-num {
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    color: var(--blue-deep);
-    border: 1px solid var(--blue);
-    border-radius: 3px;
-    padding: 2px 7px;
-  }
-
-  .section-title {
-    font-family: 'Newsreader', serif;
-    font-weight: 500;
-    font-size: 26px;
-    color: var(--ink);
-  }
-
+  .section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 24px; }
+  .section-num { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--blue-deep); border: 1px solid var(--blue); border-radius: 3px; padding: 2px 7px; }
+  .section-title { font-family: 'Newsreader', serif; font-weight: 500; font-size: 26px; color: var(--ink); }
   section { margin-bottom: 60px; }
 
-  /* KPI STRIP */
-  .kpi-strip {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
-  .kpi {
-    background: var(--surface);
-    padding: 24px 20px;
-  }
-
-  .kpi-label {
-    font-family: 'Space Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 12px;
-  }
-
-  .kpi-value {
-    font-family: 'Newsreader', serif;
-    font-size: 34px;
-    font-weight: 500;
-    color: var(--ink);
-  }
-
+  .kpi-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .kpi { background: var(--surface); padding: 24px 20px; }
+  .kpi-label { font-family: 'Space Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 12px; }
+  .kpi-value { font-family: 'Newsreader', serif; font-size: 34px; font-weight: 500; color: var(--ink); }
   .kpi-value.blue { color: var(--blue-deep); }
   .kpi-sub { margin-top: 6px; font-size: 12px; color: var(--ink-faint); }
 
-  /* CHART PANELS */
-  .panel-title {
-    font-family: 'Space Mono', monospace;
-    font-size: 11.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--blue-deep);
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 8px;
-  }
-
+  .panel-title { font-family: 'Space Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue-deep); margin-bottom: 10px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
   .panel-title span { color: var(--ink-faint); text-transform: none; letter-spacing: 0; font-style: italic; font-family: 'Newsreader', serif; font-size: 13px; }
-
-  .chart-block {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 18px 18px 4px;
-  }
-
-  .chart-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 24px;
-  }
-
-  .chart-block img {
-    width: 100%;
-    display: block;
-    border-radius: 3px;
-  }
-
+  .chart-block { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 18px 4px; }
+  .chart-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; }
+  .chart-block img { width: 100%; display: block; border-radius: 3px; }
   .full-width-chart { margin-top: 24px; }
   .full-width-chart img { width: 100%; }
 
-  /* MODEL TABLE */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Space Mono', monospace;
-    font-size: 13px;
-  }
-
-  thead th {
-    text-align: left;
-    font-size: 10.5px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    font-weight: 700;
-    padding: 0 14px 12px;
-    border-bottom: 1px solid var(--ink);
-  }
-
-  tbody td {
-    padding: 14px;
-    border-bottom: 1px solid var(--line);
-    color: var(--ink-dim);
-  }
-
+  table { width: 100%; border-collapse: collapse; font-family: 'Space Mono', monospace; font-size: 13px; }
+  thead th { text-align: left; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; padding: 0 14px 12px; border-bottom: 1px solid var(--ink); }
+  tbody td { padding: 14px; border-bottom: 1px solid var(--line); color: var(--ink-dim); }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr.best { background: var(--blue-pale); }
   tbody tr.best td { color: var(--ink); font-weight: 500; }
   tbody tr.best td:first-child { color: var(--blue-deep); position: relative; }
-  tbody tr.best td:first-child::before {
-    content: "\2713";
-    margin-right: 8px;
-    color: var(--blue-deep);
-  }
-
+  tbody tr.best td:first-child::before { content: "\2713"; margin-right: 8px; color: var(--blue-deep); }
   .num { text-align: right; }
 
-  /* FINDINGS + STRATEGY */
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-
-  .card-title {
-    font-family: 'Newsreader', serif;
-    font-size: 19px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    color: var(--ink);
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--line);
-  }
-
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .card-title { font-family: 'Newsreader', serif; font-size: 19px; font-weight: 500; margin-bottom: 16px; color: var(--ink); padding-bottom: 10px; border-bottom: 1px solid var(--line); }
   ul.findings { list-style: none; }
-  ul.findings li {
-    padding-left: 20px;
-    position: relative;
-    margin-bottom: 12px;
-    font-size: 14px;
-    color: var(--ink-dim);
-  }
-  ul.findings li::before {
-    content: "\2192";
-    position: absolute;
-    left: 0;
-    color: var(--blue);
-    font-weight: 700;
-  }
-
+  ul.findings li { padding-left: 20px; position: relative; margin-bottom: 12px; font-size: 14px; color: var(--ink-dim); }
+  ul.findings li::before { content: "\2192"; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
   ol.strategy { list-style: none; counter-reset: strat; }
-  ol.strategy li {
-    counter-increment: strat;
-    padding-left: 30px;
-    position: relative;
-    margin-bottom: 16px;
-    font-size: 14px;
-    color: var(--ink-dim);
-  }
-  ol.strategy li::before {
-    content: counter(strat);
-    position: absolute;
-    left: 0;
-    top: -1px;
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    color: var(--surface);
-    background: var(--blue);
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  ol.strategy li { counter-increment: strat; padding-left: 30px; position: relative; margin-bottom: 16px; font-size: 14px; color: var(--ink-dim); }
+  ol.strategy li::before { content: counter(strat); position: absolute; left: 0; top: -1px; font-family: 'Space Mono', monospace; font-size: 11px; color: var(--surface); background: var(--blue); width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 
-  /* HIGH RISK TABLE */
   .risk-table td.prob { color: var(--red); font-weight: 700; }
 
-  /* FOOTER */
-  footer {
-    margin-top: 76px;
-    padding-top: 22px;
-    border-top: 2px solid var(--ink);
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    color: var(--ink-faint);
-    display: flex;
-    justify-content: space-between;
-  }
+  footer { margin-top: 76px; padding-top: 22px; border-top: 2px solid var(--ink); font-family: 'Space Mono', monospace; font-size: 11px; color: var(--ink-faint); display: flex; justify-content: space-between; }
 
   @media (max-width: 720px) {
     h1.title { font-size: 38px; }
@@ -322,12 +99,8 @@
     </div>
   </header>
 
-  <!-- 01 KPIs -->
   <section>
-    <div class="section-head">
-      <span class="section-num">01</span>
-      <span class="section-title">At a Glance</span>
-    </div>
+    <div class="section-head"><span class="section-num">01</span><span class="section-title">At a Glance</span></div>
     <div class="kpi-strip">
       <div class="kpi">
         <div class="kpi-label">Best Model AUC</div>
@@ -340,9 +113,9 @@
         <div class="kpi-sub">1,869 of 7,043 customers</div>
       </div>
       <div class="kpi">
-        <div class="kpi-label">Top Risk Factor</div>
+        <div class="kpi-label">Top Predictive Feature</div>
         <div class="kpi-value" style="font-size:23px;">Contract</div>
-        <div class="kpi-sub">Month-to-month = highest churn</div>
+        <div class="kpi-sub">Highest importance, tuned Decision Tree</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">High-Risk Cohort</div>
@@ -352,12 +125,8 @@
     </div>
   </section>
 
-  <!-- 02 EDA -->
   <section>
-    <div class="section-head">
-      <span class="section-num">02</span>
-      <span class="section-title">Exploratory Analysis</span>
-    </div>
+    <div class="section-head"><span class="section-num">02</span><span class="section-title">Exploratory Analysis</span></div>
     <div class="chart-grid">
       <div class="chart-block">
         <div class="panel-title">Churn Distribution <span>Yes / No</span></div>
@@ -374,22 +143,10 @@
     </div>
   </section>
 
-  <!-- 03 MODEL PERFORMANCE -->
   <section>
-    <div class="section-head">
-      <span class="section-num">03</span>
-      <span class="section-title">Model Performance</span>
-    </div>
+    <div class="section-head"><span class="section-num">03</span><span class="section-title">Model Performance</span></div>
     <table>
-      <thead>
-        <tr>
-          <th>Model</th>
-          <th class="num">Accuracy</th>
-          <th class="num">Precision</th>
-          <th class="num">Recall</th>
-          <th class="num">AUC</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Model</th><th class="num">Accuracy</th><th class="num">Precision</th><th class="num">Recall</th><th class="num">AUC</th></tr></thead>
       <tbody>
         <tr>
           <td>Logistic Regression</td>
@@ -423,19 +180,15 @@
     </table>
   </section>
 
-  <!-- 04 FINDINGS + STRATEGY -->
   <section>
-    <div class="section-head">
-      <span class="section-num">04</span>
-      <span class="section-title">Findings &amp; Response</span>
-    </div>
+    <div class="section-head"><span class="section-num">04</span><span class="section-title">Findings &amp; Response</span></div>
     <div class="two-col">
       <div>
         <div class="card-title">Key Findings</div>
         <ul class="findings">
-          <li>Tuned Logistic Regression outperforms both Decision Tree variants, reaching AUC 0.862</li>
-          <li>Top churn drivers: Contract, OnlineSecurity, tenure, InternetService, TotalCharges</li>
-          <li>Short-tenure customers paying high monthly charges show the steepest churn risk</li>
+          <li>Tuned Logistic Regression performs best, reaching AUC 0.862</li>
+          <li>Top factors driving churn: Contract, OnlineSecurity, tenure, InternetService, TotalCharges</li>
+          <li>Customers with short tenure and high monthly charges are at higher risk</li>
         </ul>
       </div>
       <div>
@@ -449,24 +202,18 @@
     </div>
   </section>
 
-  <!-- 05 HIGH RISK CUSTOMERS -->
   <section>
-    <div class="section-head">
-      <span class="section-num">05</span>
-      <span class="section-title">High-Risk Customers</span>
-    </div>
+    <div class="section-head"><span class="section-num">05</span><span class="section-title">High-Risk Customers</span></div>
     <div class="chart-block">
-      <div class="panel-title">Sample from top decile by predicted churn probability <span>Tuned LR</span></div>
+      <div class="panel-title">Sample from top decile by predicted churn probability <span>Tuned Logistic Regression</span></div>
       <table class="risk-table">
-        <thead>
-          <tr><th>Customer Index</th><th class="num">Churn Probability</th></tr>
-        </thead>
+        <thead><tr><th>Customer Index</th><th class="num">Churn Probability</th></tr></thead>
         <tbody>
-          <tr><td>185</td><td class="num prob">65.9%</td></tr>
-          <tr><td>6179</td><td class="num prob">77.0%</td></tr>
-          <tr><td>3328</td><td class="num prob">67.1%</td></tr>
-          <tr><td>3469</td><td class="num prob">73.1%</td></tr>
-          <tr><td>4343</td><td class="num prob">71.5%</td></tr>
+        <tr><td>185</td><td class="num prob">65.9%</td></tr>
+        <tr><td>6179</td><td class="num prob">77.0%</td></tr>
+        <tr><td>3328</td><td class="num prob">67.1%</td></tr>
+        <tr><td>3469</td><td class="num prob">73.1%</td></tr>
+        <tr><td>4343</td><td class="num prob">71.5%</td></tr>
         </tbody>
       </table>
     </div>
